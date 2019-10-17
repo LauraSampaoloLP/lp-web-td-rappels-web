@@ -1,0 +1,198 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Proza Libre', sans-serif;
+	background-color: #D3D3D3;
+	overflow-x: hidden;
+	display: table;
+	width: 100%;
+}
+
+.fit-picture {
+	width: 250px;
+	height: 400px;
+}
+
+.fit-picture2 {
+	width: 600px;
+	height: 400px;
+}
+
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 8px;
+    max-width: 250px;
+    margin: auto;
+}
+
+img {
+    width: 250px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+main {
+	width: 70vw; /* 60% de la largeur de la page */
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+	background-color: #FFF;
+	padding: 10px;
+	box-shadow: 1px 1px 20px #848484;
+}
+
+a {
+	text-decoration: none;
+	color:#FFF;
+	padding: 10px;
+}
+
+header, footer {
+	width: 100vw;
+	height: 4vw;
+	vertical-align: middle;
+	background-color: #353535;
+	color: #FFF;
+}
+
+header h1 {
+	display: inline-block;
+	height: 5vw;
+	line-height: 4vw;
+	margin-top: 0;
+	margin-left: 2vw;
+}
+
+nav {
+	width: auto;
+	height: 100%;
+	display: inline-block;
+	align-items: center;
+}
+
+footer {
+	text-align: center;
+	height: 50px;
+	padding: 10px 0;
+	display: table-row;
+}
+
+section > dl > dt {
+	cursor: pointer;
+	background-color: #E1E1E1;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+input, textarea, select {
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+	height: 35px;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 10px;
+	outline: none;
+	border-radius: 30px;
+	border: 2px solid dimgrey;
+	font-size: 16px;
+	padding: 5px;
+}
+
+select {
+	background-color: white;
+}
+
+textarea {
+	height: 100px;
+	border-radius: 10px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	font-weight: bold;
+}
+
+form {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+
+/*====================================== CSS SMARTPHONE ==============================================*/
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	main {
+		width: 100vw;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	header h1 {
+		display: inherit;
+		text-align: center;
+		line-height: inherit;
+		margin-bottom: 8vw;
+		padding-top: 3vw;
+	}
+
+	header {
+		height: 35vw;
+	}
+
+	nav, nav ul li, nav ul {
+		display: block;
+		text-align: center;
+		width: 80vw;
+		margin-right: auto;
+		margin-left: auto;
+		position: inherit;
+		padding: inherit;
+	}
+
+}
+
+
+/* =================        CSS TABLETTES       ================== */
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	main {
+		width: 90vw;
+	}
+
+	header, header h1, nav, nav ul li a, nav ul li a:hover {
+		height: 6vw;
+		line-height: 6vw;
+	}
+}
