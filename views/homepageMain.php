@@ -5,7 +5,7 @@
 ?>
 <main>
     <section id="titleFilme">
-        <h1>Bienvenue sur <i>Filme !</i></h1>
+        <h1>Bienvenue sur <i>Film !</i></h1>
     </section>
 
     <section>
